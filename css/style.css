@@ -1,0 +1,304 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.best-seller__products,
+.products__grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.best-seller__products .product-card, .best-seller__products .product__card,
+.products__grid .product-card,
+.products__grid .product__card {
+  margin-bottom: 20px;
+}
+.best-seller__products .product-card .product-card__img, .best-seller__products .product-card .product__card-img, .best-seller__products .product__card .product-card__img, .best-seller__products .product__card .product__card-img,
+.products__grid .product-card .product-card__img,
+.products__grid .product-card .product__card-img,
+.products__grid .product__card .product-card__img,
+.products__grid .product__card .product__card-img {
+  width: 300px;
+  height: 250px;
+  object-fit: cover;
+  background-color: #FFD4AC;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 2rem;
+}
+.header__brand {
+  font-size: 32px;
+  font-weight: bold;
+  color: #083D0A;
+}
+.header__nav-list {
+  display: flex;
+  gap: 1.5rem;
+  list-style: none;
+}
+.header__nav-item a {
+  text-decoration: none;
+  color: #083D0A;
+}
+.header__nav-item a:hover {
+  color: #F76707;
+}
+.header__nav-item:first-child a {
+  color: #F76707;
+}
+.header__right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+.header__search {
+  display: flex;
+  background-color: #FFD4AC;
+  padding: 0.5rem;
+  border-radius: 4px;
+  align-items: center;
+}
+.header__search-input {
+  border: none;
+  background: transparent;
+  outline: none;
+}
+.header__search-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #0A3406;
+}
+.header .cart-icon {
+  color: #0A3406;
+}
+.header .cart-icon:hover {
+  color: #D9480F;
+}
+
+.hero {
+  background: linear-gradient(to right, #D9480F, #FF922B, #F76707);
+  color: #fff;
+  padding: 40px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.hero__content {
+  flex: 1;
+  max-width: 600px;
+  margin: 50px;
+  text-align: left;
+}
+.hero__image {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+.hero__image img {
+  max-width: 800px;
+  height: auto;
+}
+.hero__brand {
+  font-size: 24px;
+  font-style: italic;
+}
+.hero__title {
+  font-size: 60px;
+  font-weight: bold;
+}
+.hero__tagline {
+  font-size: 24px;
+  font-style: italic;
+  margin-bottom: 20px;
+}
+.hero__btn {
+  background-color: #fff;
+  color: #083D0A;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 40px;
+  padding: 10px;
+  text-decoration: none;
+  text-transform: capitalize;
+}
+.hero__btn:hover {
+  background-color: rgb(229.5, 229.5, 229.5);
+}
+.hero__btn:hover {
+  text-decoration: underline;
+  color: #fff;
+  background-color: #D9480F;
+  border: solid 2px #083D0A;
+}
+
+.product__card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+.product__card-title {
+  font-size: 1.25rem;
+  color: #0A3406;
+}
+.product__card-desc {
+  color: black;
+}
+.product__card-cta {
+  background-color: #F76707;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 10px;
+}
+.product__card-cta:hover {
+  background-color: rgb(197.405511811, 82.3188976378, 5.594488189);
+}
+
+.best-seller__btn {
+  background-color: #F76707;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-top: 5px;
+  margin-bottom: 10px;
+  position: relative;
+  right: 40px;
+  margin-left: 90%;
+  text-decoration: none;
+  align-content: center;
+}
+.best-seller__btn:hover {
+  background-color: rgb(197.405511811, 82.3188976378, 5.594488189);
+}
+
+.best-seller__title {
+  font-size: 40px;
+}
+
+.best-seller__products, .products__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  background-color: #FFD4AC;
+}
+
+.steps__container {
+  display: flex;
+  justify-content: space-evenly;
+}
+.steps__container .step-card {
+  background-color: #F76707;
+  color: #fff;
+  border-radius: 50%;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 26px;
+  text-align: center;
+}
+
+.footer {
+  background-color: #083D0A;
+  color: #fff;
+  padding: 40px 0 10px;
+}
+.footer__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
+}
+.footer__social {
+  position: relative;
+  display: flex;
+  justify-content: right;
+  left: auto;
+  color: #D9480F;
+  padding: 20px;
+  margin-left: 20px;
+  gap: 15px;
+}
+.footer__social:hover {
+  color: #D9480F;
+}
+.footer__brand {
+  font-size: 70px;
+  font-weight: bold;
+  margin-bottom: 0;
+  margin-left: 30px;
+  left: 30px;
+  bottom: 10px;
+}
+.footer__links {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  font-size: 24px;
+}
+.footer__links ul {
+  list-style: none;
+}
+.footer__links ul li {
+  margin-bottom: 10px;
+}
+.footer__links ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+.footer__links ul li a:hover {
+  color: #D9480F;
+}
+.footer__newsletter {
+  text-align: left;
+}
+.footer__newsletter input {
+  padding: 10px;
+  margin-right: 10px;
+  border-radius: 5px;
+  border: 1px solid #083D0A;
+}
+.footer__newsletter .footer__newsletter-btn {
+  background-color: #F76707;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  margin-right: 20px;
+}
+.footer__newsletter .footer__newsletter-btn:hover {
+  background-color: rgb(197.405511811, 82.3188976378, 5.594488189);
+}
+
+/*# sourceMappingURL=style.css.map */
